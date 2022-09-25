@@ -1,0 +1,3 @@
+[submodule "Plugins/EnhancedWidgetNavigation"]
+	path = Plugins/EnhancedWidgetNavigation
+	url = https://github.com/koorinonaka/EnhancedWidgetNavigation
