@@ -1,10 +1,6 @@
 @echo off
 
-SET PROJECT_NAME=EWNProject
-
-SET PROJECT_ROOT=%~dp0%..
-SET ENGINE_ROOT=G:\EpicGamesLauncher\UE_5.0\Engine
-SET GAME_UPROJECT=%PROJECT_ROOT%\%PROJECT_NAME%.uproject
+CALL %~dp0%_Env.bat
 
 :: コマンドラインから実行する場合は引数で指定可能
 SET PLATFORM=%~1
@@ -27,8 +23,11 @@ IF "%TARGET%"=="" GOTO :INPUT_TARGET
 ::
 :THROUGH_INPUT
 
+SET ARCHIVE_DIR=%PROJECT_ROOT%\..\Archive
+
 :: クック処理
 START %ENGINE_ROOT%\Build\BatchFiles\RunUAT ^
 	BuildCookRun -project=%GAME_UPROJECT% ^
 	-noP4 -build -cook -iterate -compressed -stage -package -utf8output -compile ^
-	-targetplatform=%PLATFORM% -clientconfig=%TARGET%
+	-targetplatform=%PLATFORM% -clientconfig=%TARGET% ^
+	-archive -archivedirectory=%ARCHIVE_DIR%

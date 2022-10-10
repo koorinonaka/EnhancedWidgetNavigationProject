@@ -1,7 +1,7 @@
 @echo off
 
-SET PROJECT_ROOT=%~dp0%..
-SET ENGINE_ROOT=G:\EpicGamesLauncher\UE_5.0\Engine
+CALL %~dp0%_Env.bat
+
 SET UPLUGIN=%PROJECT_ROOT%\Plugins\EnhancedWidgetNavigation\EnhancedWidgetNavigation.uplugin
 SET ARCHIVE=%PROJECT_ROOT%\Archive\UE_5.0\EnhancedWidgetNavigation
 
