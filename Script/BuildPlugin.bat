@@ -6,5 +6,9 @@ SET UPLUGIN=%PROJECT_ROOT%\Plugins\EnhancedWidgetNavigation\EnhancedWidgetNaviga
 SET ARCHIVE=%PROJECT_ROOT%\Archive\UE_5.0\EnhancedWidgetNavigation
 
 ::
-START %ENGINE_ROOT%\Build\BatchFiles\RunUAT ^
+CALL %ENGINE_ROOT%\Build\BatchFiles\RunUAT ^
 	BuildPlugin -plugin=%UPLUGIN% -package=%ARCHIVE% -rocket
+
+:: delete unused file
+RD /q /s %ARCHIVE%\Intermediate
+DEL %ARCHIVE%\Source\.clang-format
