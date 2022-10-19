@@ -10,5 +10,7 @@ CALL %ENGINE_ROOT%\Build\BatchFiles\RunUAT ^
 	BuildPlugin -plugin=%UPLUGIN% -package=%ARCHIVE% -rocket
 
 :: delete unused file
+RD /q /s %ARCHIVE%\Binaries
 RD /q /s %ARCHIVE%\Intermediate
+DEL %ARCHIVE%\README.md
 DEL %ARCHIVE%\Source\.clang-format
