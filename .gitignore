@@ -79,3 +79,4 @@ DerivedDataCache/*
 # MyDirectory
 Archive/*
 Config/HoloLens/HoloLensEngine.ini
+Plugins/BlueprintAssist
