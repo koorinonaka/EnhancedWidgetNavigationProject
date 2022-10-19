@@ -13,5 +13,5 @@ this is [EnhancedWidgetNavigation](https://github.com/koorinonaka/EnhancedWidget
 
 ### for blueprint project
 
-1. Get the plugin from Marketplace.
-2. Drop EnhancedWidgetNavigation in Plugins directory and launch EWNProject.uproject.
+1. Get the plugin from [UE Marketplace](https://www.unrealengine.com/marketplace/en-US/product/enhancedwidgetnavigation).
+2. Download the correct zip for your version from the [release page](https://github.com/koorinonaka/EnhancedWidgetNavigationProject/releases) and launch it!
