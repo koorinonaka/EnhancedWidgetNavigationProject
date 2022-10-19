@@ -17,6 +17,7 @@
 *.so
 *.dylib
 *.pdb
+*.target
 
 # Fortran module files
 *.mod
@@ -78,4 +79,3 @@ DerivedDataCache/*
 # MyDirectory
 Archive/*
 Config/HoloLens/HoloLensEngine.ini
-*.target
