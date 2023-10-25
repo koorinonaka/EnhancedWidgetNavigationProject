@@ -8,7 +8,7 @@ public class EWNProjectEditorTarget : TargetRules
 	public EWNProjectEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange(new string[] { "EWNProject" });
 
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;

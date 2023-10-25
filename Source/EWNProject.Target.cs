@@ -8,7 +8,9 @@ public class EWNProjectTarget : TargetRules
 	public EWNProjectTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange(new string[] { "EWNProject" });
+		
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 	}
 }
