@@ -3,5 +3,5 @@
 SET PROJECT_NAME=EWNProject
 
 SET PROJECT_ROOT=%~dp0%..
-SET ENGINE_ROOT=G:\EpicGamesLauncher\UE_5.3\Engine
+SET ENGINE_ROOT=G:\EpicGamesLauncher\UE_5.4\Engine
 SET GAME_UPROJECT=%PROJECT_ROOT%\%PROJECT_NAME%.uproject
