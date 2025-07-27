@@ -4,7 +4,7 @@ SET UPLUGIN=%PROJECT_ROOT%\Plugins\EnhancedWidgetNavigation\EnhancedWidgetNaviga
 SET ARCHIVE=%PROJECT_ROOT%\Archive\%ENGINE_VERSION%\EnhancedWidgetNavigation
 
 ::
-CALL G:\EpicGamesLauncher\%ENGINE_VERSION%\Engine\Build\BatchFiles\RunUAT ^
+CALL "D:\Apps\Epic Games\%ENGINE_VERSION%\Engine\Build\BatchFiles\RunUAT" ^
 	BuildPlugin -plugin=%UPLUGIN% -package=%ARCHIVE% -rocket
 
 :: delete unused file
